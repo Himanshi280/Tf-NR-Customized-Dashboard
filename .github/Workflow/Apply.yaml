@@ -1,0 +1,30 @@
+name: Terraform apply
+
+on:
+  workflow_dispatch:
+    # inputs:
+    #   region:
+    #     description: 'Region'
+    #     required: true
+
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    env:
+        working-directory: ./
+        
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setting up Terraform
+        uses: hashicorp/setup-terraform@v2
+
+      - name: Deploying the infrastructure
+        working-directory: ${{env.working-directory}}
+        run: |
+          terraform init
+          terraform plan
+          terraform apply -auto-approve
