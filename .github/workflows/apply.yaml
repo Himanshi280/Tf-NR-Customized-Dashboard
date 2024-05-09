@@ -22,7 +22,7 @@ jobs:
         uses: hashicorp/setup-terraform@v2
 
       - name: Apply New Relic deployment marker
-        uses: newrelic/deployment-marker-action@master
+        uses: newrelic/deployment-marker-action@v0.1.1
         with:
           apiKey: ${{ secrets.NEW_RELIC_API_KEY }}  
           region: US                                    
