@@ -21,13 +21,13 @@ jobs:
       - name: Setting up Terraform
         uses: hashicorp/setup-terraform@v2
 
-      - name: Apply New Relic deployment marker
-        uses: newrelic/deployment-marker-action@v0.1.1
-        with:
-          apiKey: ${{ secrets.NEW_RELIC_API_KEY }}  
-          region: US                                    
-          accountId:          
-          user: ${{ secrets.account_id }}   
+      # - name: Apply New Relic deployment marker
+      #   uses: newrelic/deployment-marker-action@v0.1.1
+      #   with:
+      #     apiKey: ${{ secrets.NEW_RELIC_API_KEY }}  
+      #     region: US                                    
+      #     accountId:          
+      #     user: ${{ secrets.account_id }}   
 
       - name: Deploying the infrastructure
         working-directory: ${{env.working-directory}}
