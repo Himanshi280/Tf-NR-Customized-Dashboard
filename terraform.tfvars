@@ -51,6 +51,10 @@ EOT
 • NO gerwire reuests to endpoint Stnuid be blOCked. This endpoint is used by the Payment Inqestor Service (SCS Queue) which can be seen here to notify the Pavrent Ot any Adyen and Mdpay/Razerpay CaUböCkS. It these are blOCked Ot error (IEn-200). it could kad to orders notoroarcssna. requestsqoinqtothis A Koolic exists in Ceauence called Pavant service it win mean no reauests to oe blocked.
 EOT
 }
-name        = "Customized Dashboard 2.0"
+<<<<<<< HEAD
+name        = "Dashboard-using-pipeline 2.0"
+=======
+name        = "Dashboard-using-pipeline 2.0"
+>>>>>>> 6527348da469dd63f9b84d621dce05cb6ab5ceaf
 permissions = "public_read_only"
 

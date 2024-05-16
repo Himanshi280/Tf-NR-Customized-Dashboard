@@ -34,5 +34,10 @@ jobs:
         run: |
           terraform init
           terraform plan
-          terraform apply -auto-approve
-          terraform destroy
+<<<<<<< HEAD
+          terraform apply --auto-approve
+          terraform destroy --auto-approve
+=======
+          terraform apply --auto-approve
+          terraform destroy --auto-approve
+>>>>>>> 6527348da469dd63f9b84d621dce05cb6ab5ceaf
