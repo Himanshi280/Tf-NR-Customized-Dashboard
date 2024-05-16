@@ -3,9 +3,10 @@ on:
   workflow_dispatch:
   
     inputs:
-      region:
-        description: 'Region'
-        required: true
+      action:
+        region:
+          description: 'Region'
+          required: true
 
 
 jobs:
