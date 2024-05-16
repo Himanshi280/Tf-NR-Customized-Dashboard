@@ -32,4 +32,6 @@ jobs:
       - name: Deploying the infrastructure
         working-directory: ${{env.working-directory}}
         run: |
+          terraform init
+          terraform plan
           terraform destroy --auto-approve
