@@ -12,8 +12,8 @@ jobs:
   create:
     runs-on: ubuntu-latest
     env:
-        working-directory: ./
-         AWS_REGION: ap-south-1
+      working-directory: ./
+        AWS_REGION: ap-south-1
         
 
     steps:
