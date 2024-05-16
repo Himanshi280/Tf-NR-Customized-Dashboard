@@ -25,7 +25,7 @@ jobs:
         with:
           aws-access-key-id :  ${{ secrets.ACCESS_KEY}}
           aws-secret-access-key : ${{ secrets.SECRET_ACCESS_KEY }}
-          aws-session-token :     ${{ secrets.SESSION_TOKEN }}
+          aws-session-token : ${{ secrets.SESSION_TOKEN }}
           aws-region: ${{ env.AWS_REGION }}
   
 
