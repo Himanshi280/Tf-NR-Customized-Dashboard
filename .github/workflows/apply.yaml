@@ -2,10 +2,10 @@ name: Terraform apply
 on:
   workflow_dispatch:
   
-    # inputs:
-    #   region:
-    #     description: 'Region'
-    #     required: true
+    inputs:
+      region:
+        description: 'Region'
+        required: true
 
 
 jobs:
