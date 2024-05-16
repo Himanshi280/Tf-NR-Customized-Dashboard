@@ -7,6 +7,10 @@ on:
         region:
           description: 'Region'
           required: true
+  
+  push:
+    branches:
+      - main
 
 
 jobs:
