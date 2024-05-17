@@ -3,10 +3,9 @@ name: Terraform apply destroy
 on:
   workflow_dispatch:
     inputs:
-      command:
-        
+      command:        
         type: choice
-        description: delect command
+        description: select command
         options:
         - apply
         - destroy
@@ -19,8 +18,7 @@ jobs:
   create:
     runs-on: ubuntu-latest
     
-    env:
-      
+    env:     
       AWS_REGION: ap-south-1
        
     steps:
