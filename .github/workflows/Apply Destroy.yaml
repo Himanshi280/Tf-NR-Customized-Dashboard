@@ -4,8 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: 'Command'
-        required: true
+        
+        type: choice
+        description: delect command
+        options:
+        - apply
+        - destroy
         
   # push:
   #   branches:
@@ -16,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     
     env:
-      working-directory: ./
+      
       AWS_REGION: ap-south-1
        
     steps:
@@ -38,6 +42,6 @@ jobs:
       - name: Terraform Plan
         run: terraform plan   
       - name: Deploying the infrastructure
-        working-directory: ${{ env.working-directory }}
+       
         run: |
           terraform ${{ inputs.command }} --auto-approve
