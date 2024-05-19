@@ -12,9 +12,9 @@ terraform {
 
 # Configure the New Relic provider
 provider "newrelic"{
-  account_id = 4411834
-  api_key    = "NRAK-PYOFRHO15RY3IOAJ4DB19V8ZJ2N" # Usually prefixed with 'NRAK'
-  region     = "US"                               # Valid regions are US and EU
+  account_id = secrets.NEWRELIC_ACCOUNT_ID
+  api_key    = secrets.NEW_RELIC_API_KEY
+  region     = "US"                               
 }
 provider "aws"{
   region = "ap-south-1"
